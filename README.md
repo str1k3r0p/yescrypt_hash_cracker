@@ -53,15 +53,3 @@ chmod +x decrypt.sh
 [*] Cracking password for user: kali
 [+] Found password for kali: 1234
 
-
-## ⚠️ Disclaimer
-
-This project is for **educational and ethical testing purposes only**.
-Do **not** use it against systems without explicit authorization.
-Unauthorized access is illegal and punishable by law.
-
-
-## 📜 License
-
-MIT License – use, modify, and share freely.
-
