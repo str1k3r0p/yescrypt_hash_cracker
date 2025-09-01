@@ -19,8 +19,6 @@ Both scripts require an **unshadowed file** (merged `/etc/passwd` + `/etc/shadow
 - Install `mkpasswd`:
   ```bash
   sudo apt update && sudo apt install whois -y
-````
-
 
 ## 🛠️ How to Use
 
