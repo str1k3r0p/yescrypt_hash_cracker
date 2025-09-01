@@ -1,4 +1,3 @@
-````markdown
 # 🔑 Yescrypt Password Hash Cracker
 
 This repository provides **two tools** (Python and Bash) for cracking **yescrypt password hashes** from Linux systems.  
@@ -6,14 +5,10 @@ Yescrypt is the default hashing algorithm in modern Linux distributions (e.g., U
 
 Both scripts require an **unshadowed file** (merged `/etc/passwd` + `/etc/shadow`) and a **wordlist** of candidate passwords.  
 
----
-
 ## 📂 Repository Contents
 
 - **`yescrypt_cracker.py`** → Python-based yescrypt cracker using the built-in `crypt` library.  
 - **`decrypt.sh`** → Bash-based yescrypt cracker using `mkpasswd` (from the `whois` package).  
-
----
 
 ## ⚡ Prerequisites
 
@@ -26,7 +21,6 @@ Both scripts require an **unshadowed file** (merged `/etc/passwd` + `/etc/shadow
   sudo apt update && sudo apt install whois -y
 ````
 
----
 
 ## 🛠️ How to Use
 
@@ -35,9 +29,6 @@ Both scripts require an **unshadowed file** (merged `/etc/passwd` + `/etc/shadow
 ```bash
 unshadow /etc/passwd /etc/shadow > unshadowed.txt
 ```
-
----
-
 ### 2. Run the Python script
 
 ```bash
@@ -46,31 +37,24 @@ python3 yescrypt_cracker.py unshadowed.txt wordlist.txt
 
 **Sample output:**
 
-```
 [+] Loaded 2 yescrypt hash(es)
 [+] Loaded 10 candidate passwords from wordlist
 
 [*] Cracking password for user: root
 [+] Found password for root: toor
-```
 
----
 
 ### 3. Run the Bash script
 
 ```bash
 chmod +x decrypt.sh
 ./decrypt.sh unshadowed.txt wordlist.txt
-```
 
-**Sample output:**
+## Sample output:**
 
-```
 [*] Cracking password for user: kali
 [+] Found password for kali: 1234
-```
 
----
 
 ## ⚠️ Disclaimer
 
@@ -78,15 +62,8 @@ This project is for **educational and ethical testing purposes only**.
 Do **not** use it against systems without explicit authorization.
 Unauthorized access is illegal and punishable by law.
 
----
 
 ## 📜 License
 
 MIT License – use, modify, and share freely.
 
-```
-
----
-
-Do you want me to also include a **quick comparison table (Python vs Bash)** in this same README (speed, dependencies, ease of use), or should I leave it clean and minimal?
-```
